@@ -10,6 +10,18 @@ body {
 
 }
 
+.custom-img {
+    width: 100%; /* Tamanho original */
+  }
+  
+  @media (min-width: 767px) { /* Estilos para dispositivos móveis */
+    #carouselExampleControls {
+        margin: auto;
+        width: 30vw;
+    }
+  }
+
+  
 @media only screen and (min-width: 768px) {
     li {
         margin: 0 50px;
@@ -50,14 +62,11 @@ main h2 {
     padding: 20px;
 }
 
-.pets img {
-    width: 100%;
-    max-width: 400px;
-    height: 400px;
-    border-radius: 10%;
-    margin: 20px;
-    border-style: none;
+.custom-img {
+    max-width: 500px;
+    margin: auto;
 }
+
 
 .pets img:hover {
     box-shadow: 2px 2px 10px black;
@@ -70,10 +79,9 @@ nav a {
     font-size: 1.2em;
 }
 
+
 nav a:hover {
-    background-color: purple;
-    padding: 15px;
-    border-radius: 5%;
+    color: purple;
 }
 
 .vet {
@@ -104,6 +112,8 @@ footer {
     margin-top: 9%;
     font-size: 14px;
 }
+ 
+
 
 
 .t1 {
@@ -118,6 +128,7 @@ footer {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    list-style: none;
 }
 
 @media only screen and (min-width: 768px) {
@@ -170,13 +181,8 @@ input[type="submit"]:hover {
     text-align: center;
 }
 
-.prod { 
-    margin-top: 2%;
-    text-align: center;
-}
-
 .adote {
-    margin-top: 5%;
+
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -184,12 +190,7 @@ input[type="submit"]:hover {
 }
 
 .adote li{
+    margin: 50px;
     list-style: none
 }
 
-.adote img {
-    width: 500px;
-    height: 400px;
-    border-radius: 20%;
-    box-shadow: 2px 2px 5px black;
-}
